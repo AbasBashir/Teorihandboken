@@ -1,0 +1,12 @@
+## UD 1.3 Riktlinjer för användbarhet
+Guidelines for usability are goals an individual or a company conform to with the purpose of making a website useful and easy to use. There are 6 main usability goals. These are the following: easy to learn, safe to use, effective to use, efficient to use, good utility and memorable.   
+
+The first goal, easy to learn examines how easy it is for users to learn about the website or a particular feature. That is why a great deal of time is spent on evaluating how easy it is for the users to learn. Based on this result, it informs the product team on the measurement of usability and thus allows them to alter or continue the course of the development. The second goal is ensuring the safety and security of the user when they use the website or feature. It is vital that the user’s data and identity is safely guarded from potential hackers or scammers. Error handling and being able to recover loss of data is also part of this goal. The third usability goal is the effectiveness goal, and it focuses on evaluating how effective a product is at solving a problem it is made to solve. An example would be a coffee owner who wants to increase the number of online purchases or take ways on their website. The effectiveness goal in this case is to handle any errors that may arise and facilitate the steps when ordering.  The goal to efficiently use a website involves making sure users do not experience too long of a loading time. However, as for the good utility goal, the aim is to ensure the user has ample options in case a particular feature is not functioning. For instance, the user should be able to have back or next options. Finally, the memorable goal examines how easy it is to remember the website. A website that is easy to remember indicates users can easily navigate through the website and handle issues with minimal effort since they have encountered the problem several times. This is a key goal that measures the usability of a website.  
+
+# **Sources**:  
+
+1. [chasacademy.instructure.com](https://chasacademy.instructure.com/)
+    - PowerPoint [Tisdag 17.10] - UX och UI design samt prototyper
+    - PowerPoint [Onsdag 18.10] - Målgruppsanalys och empiriska metoder
+    - PowerPoint [Torsdag 18.10] - Användbarhet och grundläggande kognitionspsykolog
+2. [educative.io](https://www.educative.io/answers/what-are-usability-goals-in-interactive-design)
