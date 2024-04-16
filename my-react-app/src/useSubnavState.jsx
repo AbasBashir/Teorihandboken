@@ -8,11 +8,7 @@ function useSubnavState(initialState) {
         setIsSubnavVisible(!isSubnavVisible);
     };
 
-    return (
-        <div>
-        
-        </div>
-    )
+    return [isSubnavVisible, toggleSubnav];
 }
 
 export default useSubnavState
