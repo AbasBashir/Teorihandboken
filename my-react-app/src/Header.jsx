@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import menuDown from './assets/menu-down.svg';
 import Projektmetodik from './Projektmetodik';
 import useSubnavState from './useSubnavState';
+import HTMLCSS from './HTMLCSS';
 
 function Header() {
 
@@ -35,7 +36,7 @@ function Header() {
                         <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
                     </div>
                     <div className={`transition-all duration-100 ${isSubnavVisibleHTMLCSS ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                        <Projektmetodik />
+                        <HTMLCSS />
                     </div>
                 </div>
 
