@@ -5,7 +5,10 @@ import Projektmetodik from './Projektmetodik';
 function Header() {
 
     const [isSubnavVisible, setIsSubnavVisible] = useState(false);
-    
+
+    const toggleSubnav = () => {
+        setIsSubnavVisible(!isSubnavVisible);
+    };
 
     return (
         <div className='bg-[#6BA368] border-b-[1.5px]'>
@@ -13,12 +16,12 @@ function Header() {
         <nav className='fixed bg-[#6BA368] h-full w-80 border-t-[1.5px] border-[#98c897]'>
             <ul className='relative top-5 flex flex-col space-y-6 justify-center'>
                 <div>
-                    <div className='flex items-center justify-between hover:bg-black hover:text-white'>
-                        <li className='hover:text-white'><a href="" className='inline-block w-full p-2 text-lg font-mono'>Projektmetodik</a></li>
+                    <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnav}>
+                        <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-mono'>Projektmetodik</a></li>
                         <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
                     </div>
                     <div>
-                        <Projektmetodik></Projektmetodik>
+                    {isSubnavVisible && <Projektmetodik />}
                     </div>
                 </div>
             
