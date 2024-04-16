@@ -1,46 +1,18 @@
 import React,{useState} from 'react';
 import menuDown from './assets/menu-down.svg';
 import Projektmetodik from './Projektmetodik';
+import useSubnavState from './useSubnavState';
 
 function Header() {
 
-    const [isSubnavVisibleProjektmetodik, setIsSubnavVisibleProjektmetodik] = useState(false);
-    const [isSubnavVisibleHTMLCSS, setIsSubnavVisibleHTMLCSS] = useState(false);
-    const [isSubnavVisibleUXDesign, setIsSubnavVisibleUXDesign] = useState(false);
-    const [isSubnavVisibleProgrammeringsMetodik, setIsSubnavVisibleProgrammeringsMetodik] = useState(false);
-    const [isSubnavVisibleJavaScript, setIsSubnavVisibleJavaScript] = useState(false);
-    const [isSubnavVisibleBackendutveckling, setIsSubnavVisibleBackendutveckling] = useState(false);
-    const [isSubnavVisibleAvanceradJavaScript, setIsSubnavVisibleAvanceradJavaScript] = useState(false);
+    const [isSubnavVisibleProjektmetodik, toggleSubnavProjektmetodik] = useSubnavState(false);
 
-
-    const toggleSubnavProjektmetodik = () => {
-        setIsSubnavVisibleProjektmetodik(!isSubnavVisibleProjektmetodik);
-    };
-
-    const toggleSubnavHTMLCSS = () => {
-        setIsSubnavVisibleHTMLCSS(!isSubnavVisibleHTMLCSS);
-    };
-
-    const toggleSubnavUXDesign = () => {
-        setIsSubnavVisibleUXDesign(!isSubnavVisibleUXDesign);
-    };
-
-    const toggleSubnavProgrammeringsMetodik = () => {
-        setIsSubnavVisibleProgrammeringsMetodik(!isSubnavVisibleProgrammeringsMetodik);
-    };
-
-    const toggleSubnavJavaScript = () => {
-        setIsSubnavVisibleJavaScript(!isSubnavVisibleJavaScript);
-    };
-
-    const toggleSubnavBackendutveckling = () => {
-        setIsSubnavVisibleBackendutveckling(!isSubnavVisibleBackendutveckling);
-    };
-
-    const toggleSubnavAvanceradJavaScript = () => {
-        setIsSubnavVisibleAvanceradJavaScript(!isSubnavVisibleAvanceradJavaScript);
-    };
-
+    const [isSubnavVisibleHTMLCSS, toggleSubnavHTMLCSS] = useSubnavState(false);
+    const [isSubnavVisibleUXDesign, toggleSubnavUXDesign] = useSubnavState(false);
+    const [isSubnavVisibleProgrammeringsMetodik, toggleSubnavProgrammeringsMetodik] = useSubnavState(false);
+    const [isSubnavVisibleJavaScript, toggleSubnavJavaScript] = useSubnavState(false);
+    const [isSubnavVisibleBackendutveckling, toggleSubnavBackendutveckling] = useSubnavState(false);
+    const [isSubnavVisibleAvanceradJavaScript, toggleSubnavAvanceradJavaScript] = useSubnavState(false);
 
     return (
         <div className='bg-[#6BA368] border-b-[1.5px]'>
