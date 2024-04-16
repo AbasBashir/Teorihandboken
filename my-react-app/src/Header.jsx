@@ -20,8 +20,8 @@ function Header() {
                         <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-mono'>Projektmetodik</a></li>
                         <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
                     </div>
-                    <div>
-                    {isSubnavVisible && <Projektmetodik />}
+                    <div className={`transition-all duration-100 ${isSubnavVisible ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
+                        <Projektmetodik />
                     </div>
                 </div>
             
