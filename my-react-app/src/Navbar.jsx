@@ -4,6 +4,7 @@ import Projektmetodik from './Projektmetodik';
 import useSubnavState from './useSubnavState';
 import HTMLCSS from './HTMLCSS';
 import UxDesign from '../UxDesign';
+import Programmeringsmetodik from './Programmeringsmetodik';
 
 function Navbar() {
     
@@ -55,7 +56,7 @@ function Navbar() {
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleProgrammeringsMetodik ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <Projektmetodik />
+                <Programmeringsmetodik />
             </div>
         </div>
 
