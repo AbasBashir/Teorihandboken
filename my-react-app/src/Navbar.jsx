@@ -3,6 +3,7 @@ import menuDown from './assets/menu-down.svg';
 import Projektmetodik from './Projektmetodik';
 import useSubnavState from './useSubnavState';
 import HTMLCSS from './HTMLCSS';
+import UxDesign from '../UxDesign';
 
 function Navbar() {
     
@@ -44,7 +45,7 @@ function Navbar() {
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleUXDesign ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <Projektmetodik />
+                <UxDesign />
             </div>
         </div>
 
