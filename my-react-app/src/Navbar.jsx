@@ -3,7 +3,7 @@ import menuDown from './assets/menu-down.svg';
 import Projektmetodik from './Projektmetodik';
 import useSubnavState from './useSubnavState';
 import HTMLCSS from './HTMLCSS';
-import UxDesign from '../UxDesign';
+import UxDesign from './UxDesign';
 import Programmeringsmetodik from './Programmeringsmetodik';
 import JavaScript from './JavaScript';
 import Backendutveckling from './Backendutveckling';
