@@ -5,7 +5,7 @@ import useSubnavState from './useSubnavState';
 import HTMLCSS from './HTMLCSS';
 import UxDesign from '../UxDesign';
 import Programmeringsmetodik from './Programmeringsmetodik';
-import JavaScript from '../JavaScript';
+import JavaScript from './JavaScript';
 import Backendutveckling from './Backendutveckling';
 import AvanceradJavaScript from './AvanceradJavaScript';
 
