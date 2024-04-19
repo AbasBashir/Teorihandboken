@@ -25,7 +25,7 @@ function Navbar() {
     <ul className='sticky flex flex-col space-y-6 justify-center py-10'>
         <div>
             <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavProjektmetodik}>
-                <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-semibold font-mono'>Projektmetodik</a></li>
+                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Projektmetodik</button></li>
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleProjektmetodik ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
@@ -35,7 +35,7 @@ function Navbar() {
 
         <div>
             <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavHTMLCSS}>
-                <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-semibold font-mono'>HTML-CSS</a></li>
+                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>HTML-CSS</button></li>
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleHTMLCSS ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
@@ -45,7 +45,7 @@ function Navbar() {
 
         <div>
             <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavUXDesign}>
-                <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-semibold font-mono'>UX-design</a></li>
+                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>UX-design</button></li>
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleUXDesign ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
@@ -55,7 +55,7 @@ function Navbar() {
 
         <div>
             <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavProgrammeringsMetodik}>
-                <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-semibold font-mono'>Programmeringsmetodik</a></li>
+                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Programmeringsmetodik</button></li>
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleProgrammeringsMetodik ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
@@ -65,7 +65,7 @@ function Navbar() {
 
         <div>
             <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavJavaScript}>
-                <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-semibold font-mono'>JavaScript</a></li>
+                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>JavaScript</button></li>
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleJavaScript ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
@@ -75,7 +75,7 @@ function Navbar() {
 
         <div>
             <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavBackendutveckling}>
-                <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-semibold font-mono'>Backendutveckling</a></li>
+                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Backendutveckling</button></li>
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleBackendutveckling ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
@@ -85,7 +85,7 @@ function Navbar() {
 
         <div>
             <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavAvanceradJavaScript}>
-                <li className='hover:text-white'><a href="#" className='inline-block w-full p-2 text-lg font-semibold font-mono'>Avancerad-JavaScript</a></li>
+                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Avancerad-JavaScript</button></li>
                 <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
             </div>
             <div className={`transition-all duration-100 ${isSubnavVisibleAvanceradJavaScript ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
