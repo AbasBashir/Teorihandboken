@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import menuDown from './assets/menu-down.svg';
 import Projektmetodik from './Projektmetodik';
 import useSubnavState from './useSubnavState';
 import HTMLCSS from './HTMLCSS';
@@ -8,11 +7,11 @@ import Programmeringsmetodik from './Programmeringsmetodik';
 import JavaScript from './JavaScript';
 import Backendutveckling from './Backendutveckling';
 import AvanceradJavaScript from './AvanceradJavaScript';
+import MenuItem from './MenuItem';
 
 function Navbar() {
     
     const [isSubnavVisibleProjektmetodik, toggleSubnavProjektmetodik] = useSubnavState(false);
-
     const [isSubnavVisibleHTMLCSS, toggleSubnavHTMLCSS] = useSubnavState(false);
     const [isSubnavVisibleUXDesign, toggleSubnavUXDesign] = useSubnavState(false);
     const [isSubnavVisibleProgrammeringsMetodik, toggleSubnavProgrammeringsMetodik] = useSubnavState(false);
@@ -20,80 +19,24 @@ function Navbar() {
     const [isSubnavVisibleBackendutveckling, toggleSubnavBackendutveckling] = useSubnavState(false);
     const [isSubnavVisibleAvanceradJavaScript, toggleSubnavAvanceradJavaScript] = useSubnavState(false);
 
+    const menuItems = [
+        { title: 'Projektmetodik', content: <Projektmetodik />, toggleSubnav: toggleSubnavProjektmetodik, isVisible: isSubnavVisibleProjektmetodik },
+        { title: 'HTML-CSS', content: <HTMLCSS />, toggleSubnav: toggleSubnavHTMLCSS, isVisible: isSubnavVisibleHTMLCSS },
+        { title: 'UX-design', content: <UxDesign />, toggleSubnav: toggleSubnavUXDesign, isVisible: isSubnavVisibleUXDesign },
+        { title: 'Programmeringsmetodik', content: <Programmeringsmetodik />, toggleSubnav: toggleSubnavProgrammeringsMetodik, isVisible: isSubnavVisibleProgrammeringsMetodik },
+        { title: 'JavaScript', content: <JavaScript />, toggleSubnav: toggleSubnavJavaScript, isVisible: isSubnavVisibleJavaScript },
+        { title: 'Backendutveckling', content: <Backendutveckling />, toggleSubnav: toggleSubnavBackendutveckling, isVisible: isSubnavVisibleBackendutveckling },
+        { title: 'Avancerad-JavaScript', content: <AvanceradJavaScript />, toggleSubnav: toggleSubnavAvanceradJavaScript, isVisible: isSubnavVisibleAvanceradJavaScript },
+      ];
+
   return (
     <nav className='absolute bg-[#6BA368] min-h-screen w-80 border-t-[1.5px] border-[#98c897]'>
-    <ul className='sticky flex flex-col space-y-6 justify-center py-10'>
-        <div>
-            <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavProjektmetodik}>
-                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Projektmetodik</button></li>
-                <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
-            </div>
-            <div className={`transition-all duration-100 ${isSubnavVisibleProjektmetodik ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <Projektmetodik />
-            </div>
-        </div>
-
-        <div>
-            <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavHTMLCSS}>
-                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>HTML-CSS</button></li>
-                <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
-            </div>
-            <div className={`transition-all duration-100 ${isSubnavVisibleHTMLCSS ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <HTMLCSS />
-            </div>
-        </div>
-
-        <div>
-            <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavUXDesign}>
-                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>UX-design</button></li>
-                <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
-            </div>
-            <div className={`transition-all duration-100 ${isSubnavVisibleUXDesign ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <UxDesign />
-            </div>
-        </div>
-
-        <div>
-            <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavProgrammeringsMetodik}>
-                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Programmeringsmetodik</button></li>
-                <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
-            </div>
-            <div className={`transition-all duration-100 ${isSubnavVisibleProgrammeringsMetodik ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <Programmeringsmetodik />
-            </div>
-        </div>
-
-        <div>
-            <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavJavaScript}>
-                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>JavaScript</button></li>
-                <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
-            </div>
-            <div className={`transition-all duration-100 ${isSubnavVisibleJavaScript ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <JavaScript />
-            </div>
-        </div>
-
-        <div>
-            <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavBackendutveckling}>
-                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Backendutveckling</button></li>
-                <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
-            </div>
-            <div className={`transition-all duration-100 ${isSubnavVisibleBackendutveckling ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <Backendutveckling />
-            </div>
-        </div>
-
-        <div>
-            <div className='flex items-center justify-between hover:bg-black hover:text-white' onClick={toggleSubnavAvanceradJavaScript}>
-                <li className='hover:text-white'><button className='inline-block w-full p-2 text-lg font-semibold font-mono'>Avancerad-JavaScript</button></li>
-                <img src={menuDown} alt="menu icon" className="w-8 h-8 mr-4 cursor-pointer hover:text-black" />
-            </div>
-            <div className={`transition-all duration-100 ${isSubnavVisibleAvanceradJavaScript ? 'opacity-100 scale-y-10' : 'opacity-0 scale-y-0 h-0'}`}>
-                <AvanceradJavaScript />
-            </div>
-        </div>
-    </ul>
-</nav>
+        <ul className='sticky flex flex-col space-y-6 justify-center py-10'>
+            {menuItems.map((item, index) => (
+                <MenuItem key={index} title={item.title} content={item.content} toggleSubnav={item.toggleSubnav} isVisible={item.isVisible} />
+            ))}
+        </ul>
+    </nav>
   )
 }
 
