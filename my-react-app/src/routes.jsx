@@ -5,11 +5,13 @@ import AgilaMetoder from './ReadProjektmetodik/AgilaMetoder.jsx';
 import IckeAgilaMetoder from './ReadProjektmetodik/IckeAgilaMetoder.jsx';
 import Entreprenorskap from './ReadProjektmetodik/Entreprenorskap.jsx';
 import IssuedistributionAndHandling from './ReadProjektmetodik/IssuedistributionAndHandling.jsx';
+import PageNotFound from './PageNotFound.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App/>,
+    errorElement: <PageNotFound/>,
     children:[
       {
         path: 'Projektmetodik/AgilaMetoder',
