@@ -14,11 +14,11 @@ const router = createBrowserRouter([
     errorElement: <PageNotFound/>,
     children:[
       {
-        path: 'Projektmetodik/AgilaMetoder',
+        path: 'Projektmetodik/Agila Metoder',
         element: <AgilaMetoder/>,
       },
       {
-        path: 'Projektmetodik/IckeAgilaMetoder',
+        path: 'Projektmetodik/Icke-agila Metoder',
         element: <IckeAgilaMetoder/>,
       },
       {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         element: <Entreprenorskap/>,
       },
       {
-        path: 'Projektmetodik/IssuedistributionAndHandling',
+        path: 'Projektmetodik/Issue distribution & Handling',
         element: <IssuedistributionAndHandling/>,
       },
     ]
