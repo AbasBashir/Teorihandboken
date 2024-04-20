@@ -20,7 +20,7 @@ function Header() {
                 <h1 className='text-3xl pl-1 py-1.5 text-white font-light sm:pl-10'>Teori<span className='text-black font-semibold italic'>handboken~</span></h1>
             </div>
             
-           <div className={`transition-all duration-500 ease-in-out ${navbarStatus ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'}`}>
+           <div className={`transition-all duration-500 ease-in-out ${navbarStatus ? 'translate-x-0' : '-translate-x-full sm:translate-x-0 w-80'}`}>
                 <Navbar />
             </div>
         </div>  
