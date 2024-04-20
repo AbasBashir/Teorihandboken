@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import { NavbarContext } from './Header';
+import { NavbarContext } from './App';
 import { NavLink} from 'react-router-dom'
 
 function Projektmetodik() {
