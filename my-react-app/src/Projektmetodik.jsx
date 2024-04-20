@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 
 function Projektmetodik() {
 
@@ -7,9 +7,21 @@ function Projektmetodik() {
 
   return (
     <div className='flex-col space-y-2'>
-      {heading.map((mainHeading,index) => (<Link to={`/Projektmetodik/${mainHeading}`} key={index}><h4 className='cursor-pointer hover:bg-black hover:text-white pl-4 p-1 text-md'>{mainHeading}</h4></Link>))}
+      {heading.map((mainHeading,index) => (
+
+      <NavLink style={({ isActive}) => {
+        return {
+          color: isActive ? "#fff" : "",
+        };
+      }} to={`/Projektmetodik/${mainHeading}`} key={index}>
+        <h4 className='cursor-pointer hover:bg-black hover:text-white pl-4 p-1 text-md'>{mainHeading}</h4>
+      </NavLink>))}
+
     </div>
   )
 }
 
 export default Projektmetodik
+
+
+
