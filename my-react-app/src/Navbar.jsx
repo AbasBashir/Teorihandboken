@@ -30,7 +30,7 @@ function Navbar() {
       ];
 
   return (
-    <nav className='absolute bg-[#6BA368] min-h-screen w-80 border-t-[1.5px] border-[#98c897]'>
+    <nav className='absolute bg-[#6BA368] min-h-screen border-t-[1.5px] border-[#98c897] w-full'>
         <ul className='sticky flex flex-col space-y-6 justify-center py-10'>
             {menuItems.map((item, index) => (
                 <MenuItem key={index} title={item.title} content={item.content} toggleSubnav={item.toggleSubnav} isVisible={item.isVisible} />
