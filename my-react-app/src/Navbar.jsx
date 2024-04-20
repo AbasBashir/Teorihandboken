@@ -9,7 +9,7 @@ import Backendutveckling from './Backendutveckling';
 import AvanceradJavaScript from './AvanceradJavaScript';
 import MenuItem from './MenuItem';
 
-function Navbar() {
+function Navbar({navbarStatus}) {
     
     const [isSubnavVisibleProjektmetodik, toggleSubnavProjektmetodik] = useSubnavState(false);
     const [isSubnavVisibleHTMLCSS, toggleSubnavHTMLCSS] = useSubnavState(false);
@@ -30,10 +30,10 @@ function Navbar() {
       ];
 
   return (
-    <nav className='absolute bg-[#6BA368] min-h-screen border-t-[1.5px] border-[#98c897] w-full'>
+    <nav className={`absolute z-50 sm:relative bg-[#6BA368] min-h-screen border-t-[1.5px] border-[#98c897] w-full ${navbarStatus ? 'translate-x-0' : '-translate-x-full sm:translate-x-0 w-80'} xl:max-w-lg`}>
         <ul className='sticky flex flex-col space-y-6 justify-center py-10'>
             {menuItems.map((item, index) => (
-                <MenuItem key={index} title={item.title} content={item.content} toggleSubnav={item.toggleSubnav} isVisible={item.isVisible} />
+                <MenuItem index={index} title={item.title} content={item.content} toggleSubnav={item.toggleSubnav} isVisible={item.isVisible} />
             ))}
         </ul>
     </nav>
