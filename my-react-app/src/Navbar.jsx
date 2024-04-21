@@ -30,10 +30,10 @@ function Navbar({navbarStatus}) {
       ];
 
   return (
-    <nav className={`absolute z-50 sm:relative bg-[#6BA368] min-h-screen border-t-[1.5px] border-[#98c897] w-full ${navbarStatus ? 'translate-x-0' : '-translate-x-full sm:translate-x-0 w-80'} xl:max-w-lg`}>
-        <ul className='sticky flex flex-col space-y-6 justify-center py-10'>
+    <nav className={`fixed top-18 z-50 sm:relative bg-[#6BA368] min-h-screen border-t-[1.5px] border-[#98c897] w-full max-h-screen pb-10 ${navbarStatus ? 'overflow-y-auto' : ''} ${navbarStatus ? 'translate-x-0' : '-translate-x-full sm:translate-x-0 w-80'} sm:max-h-none sm:pb-0 xl:max-w-lg`}>
+        <ul className='relative flex flex-col space-y-6 justify-center py-10 overflow-y-auto sm:sticky sm:-top-6 sm:overflow-none'>
             {menuItems.map((item, index) => (
-                <MenuItem index={index} title={item.title} content={item.content} toggleSubnav={item.toggleSubnav} isVisible={item.isVisible} />
+                <MenuItem key={index} index={index} title={item.title} content={item.content} toggleSubnav={item.toggleSubnav} isVisible={item.isVisible} />
             ))}
         </ul>
     </nav>
