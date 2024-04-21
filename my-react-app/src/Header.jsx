@@ -4,7 +4,7 @@ import { SquareArrowLeft, SquareArrowRight } from "lucide-react";
 function Header({ handleNavbar, navbarStatus }) {
 
     return (
-        <div className='bg-[#6BA368] border-b-[1.5px] border-[#98c897]'>
+        <div className='sticky top-0 sm:relative bg-[#6BA368] border-b-[1.5px] border-[#98c897]'>
             <div className=" sm:w-fit flex items-center">
                 <button className="ml-4 relative top-[4px] cursor-pointer sm:hidden" onClick={handleNavbar}>
                     {navbarStatus ? <SquareArrowRight className="w-7 h-7 "/> : <SquareArrowLeft className="w-7 h-7"/>}
